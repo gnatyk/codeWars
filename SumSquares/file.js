@@ -1,7 +1,11 @@
-function sumSquares(array) {
-var square = 0;
+function sumSquares(array) { 
   var result = array.map(function(num) {
-   return square += num**2;    
-   });
-   return( result[result.length -1]);
+   return num**2;
+   });  
+   var sunSqu = result.reduce(function(a, b) {
+    return  a + b;
+  });
+  
+  return sunSqu; 
 }
+
